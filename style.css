@@ -9,6 +9,16 @@ html,body{
     width: 100%;
     font-family: "plain light";
 }
+#crsr{
+    height: 2.4vw;
+    width: 2.4vw;
+    border-radius: 50%;
+    border: 1.6px solid whitesmoke;
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+}
 #loader{
     background-color: #0B0B0B;
     height: 100%;
@@ -55,15 +65,21 @@ html,body{
     background-color: #151515;
 }
 .page1 .nav{
-    padding: 3vw 7vw;
+    padding: 2vw 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.brand__svg{
+    position: absolute;
+    left: 8%;
+}
 .nav h4{
     width: 5vw;
     font-weight: 500;
+    position: absolute;
+    right: 72%;
+    top: 3%;
 }
 .nav-part2{
     display: flex;
@@ -73,6 +89,41 @@ html,body{
 .nav-part2 h5{
     font-size: 1.1vw;
     font-weight: 400;
+}
+.hero{
+    width: 72%;
+    margin-left: 28%;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+}
+
+.hero:nth-child(2){
+    margin-top: 12vh;
+}
+.hero h1{
+    font-size: 7.2vw;
+    font-weight: 500;
+    line-height: 7.2vw;
+    text-transform: uppercase;
+}
+.hero h2{
+    font-size: 7.2vw;
+    font-weight: 500;
+    line-height: 7.2vw;
+    text-transform: uppercase;
+}
+#hero3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89%;
+    margin-left: 11%;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
 }
 
 

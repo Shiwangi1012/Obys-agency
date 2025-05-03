@@ -27,15 +27,32 @@ t1.to("#loader",{
     duration:0.2,
     delay:4
 })
-gsap.from(".line",{
-    display:"none"
-})
-gsap.from(".page1",{
+
+t1.from(".page1",{
     y:1200,
     opacity:0,
-    duration:0.4,
-    delay:0.2
+    duration:0.2
+})
+t1.to(".line",{
+    display:"none"
+})
+t1.from(".nav",{
+    opacity:0
+})
+t1.from(".hero h1, #hero3 h2",{
+    y:150,
+    stagger:0.2
 })
 }
+
+document.addEventListener("mousemove",function(dets){
+    gsap.to("#crsr",{
+        left: dets.x,
+        top: dets.y
+    })
+})
+
+
+Shery.makeMagnet(".nav-part2 h5", {});
 
 loadingAnimation()
